@@ -1,9 +1,9 @@
 import reflex as rx
+import newlife.styles.styles as styles
+
 from newlife.views.navbar import navbar
 from newlife.views.footer import footer
 from newlife.styles.styles import Color, Size, Font
-import newlife.styles.styles as styles
-
 from newlife.views.horarios_view import horarios_view
 
 

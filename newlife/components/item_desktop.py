@@ -1,6 +1,6 @@
 import reflex as rx
-from newlife.styles.styles import Color, Size, Font
 
+from newlife.styles.styles import Color, Size, Font
 from newlife.components.target_time import target_time
 
 
@@ -26,7 +26,7 @@ def item_desktop(actividad='Actividad') -> rx.Component:
                     font_size=Size.DEFAULT.value,
                 ),
                 padding=Size.SMALL.value,
-                
+
             ),
             width="14.3em",
             height="6.5em",

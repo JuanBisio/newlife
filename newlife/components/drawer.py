@@ -1,4 +1,5 @@
-import reflex as rx 
+import reflex as rx
+
 from newlife.styles.styles import Size, Color, TextColor
 from newlife.components.link_navbar import link_navbar
 
@@ -25,9 +26,9 @@ def drawer() -> rx.Component:
             on_click=DrawerState.right,
             bg='none',
             _hover={
-                'background_color':Color.DARK_RED.value 
+                'background_color': Color.DARK_RED.value
             }
-             
+
         ),
         rx.chakra.drawer(
             rx.chakra.drawer_overlay(
@@ -41,20 +42,22 @@ def drawer() -> rx.Component:
                     ),
                     rx.chakra.drawer_body(
                         rx.chakra.vstack(
-                            link_navbar('Newlife', '/','#FFFFFF00'),
-                            link_navbar('Instalaciones', '/instalaciones','#FFFFFF00'),
-                            link_navbar('Actividades', '/actividades','#FFFFFF00'),
-                            link_navbar('Horarios', '/horarios','#FFFFFF00'),
+                            link_navbar('Newlife', '/', '#FFFFFF00'),
+                            link_navbar('Instalaciones',
+                                        '/instalaciones', '#FFFFFF00'),
+                            link_navbar('Actividades',
+                                        '/actividades', '#FFFFFF00'),
+                            link_navbar('Horarios', '/horarios', '#FFFFFF00'),
                         ),
                         font_size=Size.MEDIUM.value,
                         display='flex',
                         justify_content='center',
 
-                        
+
                     ),
                     rx.chakra.drawer_footer(
                         rx.chakra.button(
-                            "Cerrar", 
+                            "Cerrar",
                             on_click=DrawerState.right,
                             bg=Color.DARK_RED.value,
                         )

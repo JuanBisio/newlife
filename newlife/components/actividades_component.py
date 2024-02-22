@@ -2,7 +2,7 @@ import reflex as rx
 from newlife.styles.styles import Color, Size, Font
 
 
-def actividad(img, title, txt,row='row-reverse') -> rx.Component:
+def actividad(img, title, txt, row='row-reverse') -> rx.Component:
     return rx.chakra.center(
         rx.chakra.box(
             rx.chakra.image(

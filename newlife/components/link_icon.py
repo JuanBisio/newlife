@@ -1,7 +1,8 @@
-import reflex as rx 
+import reflex as rx
 from newlife.styles.styles import Size, Color
 
-def link_icon(icon:str, url:str) -> rx.Component:
+
+def link_icon(icon: str, url: str) -> rx.Component:
     return rx.chakra.link(
         '',
         rx.chakra.image(
@@ -12,8 +13,8 @@ def link_icon(icon:str, url:str) -> rx.Component:
         href=url,
         is_external=True,
         _hover={
-            'background_color':Color.DARK_RED.value,
-             
+            'background_color': Color.DARK_RED.value,
+
         },
-        
+
     )

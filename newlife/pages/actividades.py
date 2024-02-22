@@ -1,9 +1,9 @@
 import reflex as rx
+import newlife.styles.styles as styles
+
 from newlife.views.navbar import navbar
 from newlife.views.footer import footer
 from newlife.styles.styles import Color, Size, Font
-import newlife.styles.styles as styles
-
 from newlife.views.actividades_view import actividades_view
 from newlife.components.spacer import spacer
 
@@ -19,5 +19,5 @@ def actividades_function() -> rx.Component:
         spacer(),
         footer('#1C1C1A'),
         style=styles.BASE_STYLE,
-        
+
     )

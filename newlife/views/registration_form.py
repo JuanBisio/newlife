@@ -1,9 +1,6 @@
 import reflex as rx
 from newlife.styles.styles import Color, Size, Font
 
-from newlife.components.checkbox import Rcheckbox
-# from newlife.components.form_control import form_control
-
 
 class RegistrationFormState(rx.State):
     form_data: dict = {}
@@ -61,7 +58,8 @@ def registration_form() -> rx.Component:
                             'border': f'1px dotted {Color.DARK_RED.value}'
                         },
                     ),
-                    rx.chakra.heading("Clases", size='lg',color=Color.DARK_RED.value, margin_y=Size.SMALL.value),
+                    rx.chakra.heading(
+                        "Clases", size='lg', color=Color.DARK_RED.value, margin_y=Size.SMALL.value),
                     rx.vstack(
                         rx.chakra.checkbox(
                             'Localizada',

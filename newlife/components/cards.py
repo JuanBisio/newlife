@@ -1,6 +1,5 @@
 import reflex as rx
 from newlife.styles.styles import Color, Size, Font
-from newlife.components.button import buttonPrimary
 
 
 class ModalState(rx.State):
@@ -27,7 +26,7 @@ def cards(text_button, img, txt) -> rx.Component:
         rx.chakra.modal(
             rx.chakra.modal_overlay(
                 rx.chakra.modal_content(
-                    rx.chakra.modal_header(text_button,rx.chakra.divider()),
+                    rx.chakra.modal_header(text_button, rx.chakra.divider()),
                     rx.chakra.modal_body(
                         txt,
                     ),

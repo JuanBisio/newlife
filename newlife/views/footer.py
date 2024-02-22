@@ -1,7 +1,5 @@
 
 import reflex as rx
-import newlife.constants as constants
-
 from newlife.styles.styles import Size, Color, TextColor, Font
 from newlife.components.link_icon import link_icon
 from newlife.components.drawer import drawer
@@ -27,9 +25,9 @@ def footer(bg) -> rx.Component:
             rx.chakra.spacer(),
             rx.chakra.hstack(
                 rx.chakra.text('This is', color=Color.WHITE.value,
-                        font_size=Size.LARGE.value),
+                               font_size=Size.LARGE.value),
                 rx.chakra.text('New Life', color=Color.DARK_RED.value,
-                        font_size=Size.LARGE.value)
+                               font_size=Size.LARGE.value)
             ),
             rx.chakra.spacer(),
             rx.desktop_only(
@@ -44,7 +42,7 @@ def footer(bg) -> rx.Component:
                         link_navbar(
                             rx.chakra.image(
                                 src='/icons/whatsapp.svg',
-                                width=Size.DEFAULT.value, 
+                                width=Size.DEFAULT.value,
                                 height=Size.DEFAULT.value),
                             """https://api.whatsapp.com/send/?phone=5493584299645&text&app_absent=0"""
                         ),

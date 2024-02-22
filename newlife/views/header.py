@@ -1,6 +1,5 @@
 import reflex as rx
 
-from newlife.components.button import buttonPrimary
 from newlife.styles.styles import Color, Size, Font
 
 
@@ -36,7 +35,7 @@ def header(color_bg) -> rx.Component:
                 justify_content='left',
                 align_items='left',
                 margin_x=Size.BIG.value,
-                max_width=['90%','90%','70%','30%','30%',]
+                max_width=['90%', '90%', '70%', '30%', '30%',]
             ),
 
             display='flex',

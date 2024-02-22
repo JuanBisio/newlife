@@ -1,8 +1,8 @@
 import reflex as rx
 from newlife.styles.styles import Color, Size, Font
-from newlife.styles.cardsStyles import *
 
-def iconCard(icon, title:str,text:str) -> rx.Component:
+
+def iconCard(icon, title: str, text: str) -> rx.Component:
     return rx.chakra.box(
         rx.chakra.center(
             rx.chakra.vstack(
@@ -13,8 +13,8 @@ def iconCard(icon, title:str,text:str) -> rx.Component:
                 rx.chakra.heading(title, size='xl', style=titleStyle),
                 rx.chakra.text(text, style=textStyle)
             ),
-            bg=Color.PRIMARY.value, 
+            bg=Color.PRIMARY.value,
             height='18em',
-            #width=Size.LARGE.value,
-        )   
+            # width=Size.LARGE.value,
+        )
     )

@@ -1,6 +1,7 @@
 import reflex as rx
 from newlife.styles.styles import Color, Size, Font
 
+
 def branding_img(src) -> rx.Component:
     return rx.chakra.box(
         rx.chakra.image(
@@ -15,5 +16,5 @@ def branding_img(src) -> rx.Component:
         margin_y='2em',
         margin_x='1em',
 
-        
+
     )

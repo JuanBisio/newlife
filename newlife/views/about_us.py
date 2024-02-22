@@ -21,9 +21,10 @@ def about_us() -> rx.Component:
                 padding_bottom=Size.SMALL.value,
                 font_family=Font.SUBTITLE.value,
             ),
-            rx.chakra.text('New Life ha ayudado a generar cambios positivos en la vida de sus clientes, en Río Cuarto, desde su fundación en el año 1987. Creemos que el entrenamiento físico no es solo un pasatiempo sino un estilo de vida. Creamos nuestro gimnasio para que sea el segundo hogar de todos nuestros usuarios. Ya sea que realices actividad física todos los días o que nunca hayas ido a un gimnasio antes, New Life puede ayudar a darle forma en lo que puedes convertirte mañana. Queremos ser aliados de tu entrenamiento.',text_aling='center',padding_bottom=Size.SMALL.value),
-            rx.chakra.text('¡Alcanzá tus metas y disfruta de tu nueva vida!',text_aling='center',padding_bottom=Size.SMALL.value),
-            
+            rx.chakra.text('New Life ha ayudado a generar cambios positivos en la vida de sus clientes, en Río Cuarto, desde su fundación en el año 1987. Creemos que el entrenamiento físico no es solo un pasatiempo sino un estilo de vida. Creamos nuestro gimnasio para que sea el segundo hogar de todos nuestros usuarios. Ya sea que realices actividad física todos los días o que nunca hayas ido a un gimnasio antes, New Life puede ayudar a darle forma en lo que puedes convertirte mañana. Queremos ser aliados de tu entrenamiento.', text_aling='center', padding_bottom=Size.SMALL.value),
+            rx.chakra.text('¡Alcanzá tus metas y disfruta de tu nueva vida!',
+                           text_aling='center', padding_bottom=Size.SMALL.value),
+
             rx.chakra.hstack(
                 rx.chakra.link(
                     rx.chakra.button(
@@ -31,7 +32,7 @@ def about_us() -> rx.Component:
                         bg=Color.DARK_RED.value,
                         border_radius='5px',
                         color=Color.WHITE.value,
-                        _hover= {
+                        _hover={
                             "color": Color.PRIMARY.value,
                         },
                     ),
@@ -43,13 +44,13 @@ def about_us() -> rx.Component:
                         bg=Color.DARK_RED.value,
                         border_radius='5px',
                         color=Color.WHITE.value,
-                        _hover= {
+                        _hover={
                             "color": Color.PRIMARY.value,
                         },
                     ),
                     href='/horarios',
                 ),
-                display='flex', 
+                display='flex',
                 justify_content='space_evenly'
             ),
 

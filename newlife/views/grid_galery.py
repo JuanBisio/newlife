@@ -1,4 +1,5 @@
 import reflex as rx
+
 from newlife.styles.styles import Color, Size, Font
 from newlife.components.grid_item import grid_item
 
@@ -8,10 +9,10 @@ def grid_galery() -> rx.Component:
         rx.chakra.vstack(
             rx.chakra.heading(
                 'DESCARGA LA APP',
-                size='2xl', 
+                size='2xl',
                 font_family=Font.SUBTITLE.value,
-                margin=Size.SMALL.value, 
-                color= Color.DARK_RED.value,
+                margin=Size.SMALL.value,
+                color=Color.DARK_RED.value,
             ),
             rx.chakra.hstack(
                 rx.chakra.vstack(
