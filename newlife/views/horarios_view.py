@@ -3,6 +3,8 @@ from newlife.styles.styles import Color, Size, Font
 import newlife.styles.styles as styles
 from newlife.components.grid_item import grid_item
 from newlife.components.horarios_mobile import horarios_mobile
+from newlife.components.horarios_desktop import horarios_desktop
+
 
 def horarios_view() -> rx.Component:
     return rx.chakra.center(
@@ -14,8 +16,15 @@ def horarios_view() -> rx.Component:
                 margin=Size.SMALL.value,
                 font_family=Font.SUBTITLE.value,
             ),
-            horarios_mobile(),
-            max_width='1200px',
+            rx.desktop_only(
+                horarios_desktop(),
+                width='100vw',
+            ),
+            rx.mobile_and_tablet(
+                horarios_mobile(),
+                max_width='1200px',
+            ),
+
             padding=Size.BIG.value,
         ),
         bg=Color.PRIMARY.value,

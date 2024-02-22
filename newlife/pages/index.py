@@ -40,7 +40,7 @@ def index_function() -> rx.Component:
         maps(),
         # branding(),
         spacer(),
-        form(),
+        #form(),
         spacer(),
         footer('#1C1C1A'),
         # cards(),

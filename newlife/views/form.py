@@ -3,7 +3,6 @@ import reflex as rx
 from newlife.styles.styles import Color, Size, Font
 
 
-
 class FormState(rx.State):
     form_data: dict = {}
 
@@ -142,24 +141,35 @@ def form() -> rx.Component:
                             },
                             margin_y=Size.DEFAULT.value,
                         ),
-                        rx.chakra.button(
-                            "Enviar",
-                            type_="submit",
-                            bg=Color.DARK_RED.value,
-                            color=Color.WHITE.value,
-                            _hover={
-                                "color": Color.PRIMARY.value,
-                            },
-
+                        rx.hstack(
+                            rx.chakra.button(
+                                "Guardar",
+                                type_="submit",
+                                bg=Color.DARK_RED.value,
+                                color=Color.WHITE.value,
+                                _hover={
+                                    "color": Color.PRIMARY.value,
+                                },
+                            ),
+                            rx.link(
+                                rx.chakra.button(
+                                    "Enviar",
+                                    # type_="submit",
+                                    bg=Color.DARK_RED.value,
+                                    color=Color.WHITE.value,
+                                    _hover={
+                                        "color": Color.PRIMARY.value,
+                                    },
+                                ),
+                                href=f'https://api.whatsapp.com/send?phone=+5493584299645&text={FormState.form_data.to_string()}',
+                                is_external=True,
+                            ),
                         ),
                     ),
                     width=['20em', '25em', '25em', '40em', '60em'],
                     on_submit=FormState.handle_submit,
                     reset_on_submit=True,
                 ),
-                rx.chakra.heading("Results"),
-                rx.chakra.text(FormState.form_data.to_string()),
-
             ),
             max_width='1200px',
         ),

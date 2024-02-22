@@ -61,7 +61,7 @@ def registration_form() -> rx.Component:
                             'border': f'1px dotted {Color.DARK_RED.value}'
                         },
                     ),
-                    rx.chakra.heading("Clases", size='lg'),
+                    rx.chakra.heading("Clases", size='lg',color=Color.DARK_RED.value, margin_y=Size.SMALL.value),
                     rx.vstack(
                         rx.chakra.checkbox(
                             'Localizada',
@@ -129,6 +129,10 @@ def registration_form() -> rx.Component:
                             size="md",
                             name='Musculacion'
                         ),
+                        display='flex',
+                        text_aling='left',
+                        justify_content='left',
+                        align_items='left',
                     ),
                     rx.chakra.text_area(
                         value=RegistrationTextareaState.text,
@@ -154,15 +158,15 @@ def registration_form() -> rx.Component:
                         rx.link(
                             rx.chakra.button(
                                 "Enviar a WhatsApp",
-                                #type_="submit",
+                                # type_="submit",
                                 bg=Color.DARK_RED.value,
                                 color=Color.WHITE.value,
                                 _hover={
                                     "color": Color.PRIMARY.value,
                                 },
                             ),
-                            #href=f'https://api.whatsapp.com/send?phone=+5493584299645&text={RegistrationFormState.form_data.to_string()}',
-                            href=f'https://formsubmit.co/bisiojuan06@gmail.com',
+                            href=f'https://api.whatsapp.com/send?phone=+5493584299645&text={RegistrationFormState.form_data.to_string()}',
+                            is_external=True
                         ),
                     ),
                     on_submit=RegistrationFormState.handle_submit,

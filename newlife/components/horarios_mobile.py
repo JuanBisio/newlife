@@ -88,20 +88,38 @@ Viernes = [
     'Cierre (22:30)'
 ]
 
+
 def horarios_mobile() -> rx.Component:
     return rx.chakra.center(
-        rx.chakra.accordion(
-            items=[
-                ("Lunes", rx.chakra.center(horarios_item_mobile(Lunes))),
-                ("Martes", rx.chakra.center(horarios_item_mobile(Martes))),
-                ("Miercoles", rx.chakra.center(horarios_item_mobile(Miercoles))),
-                ("Jueves", rx.chakra.center(horarios_item_mobile(Jueves))),
-                ("Viernes", rx.chakra.center(horarios_item_mobile(Viernes))),
-            ],
+        rx.chakra.tabs(
+            rx.chakra.tab_list(
+                rx.chakra.tab("Lun"),
+                rx.chakra.tab("Mar"),
+                rx.chakra.tab("Mie"),
+                rx.chakra.tab("Jue"),
+                rx.chakra.tab("Vie"),
+
+            ),
+            rx.chakra.tab_panels(
+                rx.chakra.tab_panel(
+                    rx.chakra.center(horarios_item_mobile(Lunes))
+                ),
+                rx.chakra.tab_panel(
+                    rx.chakra.center(horarios_item_mobile(Martes))
+                ),
+                rx.chakra.tab_panel(
+                    rx.chakra.center(horarios_item_mobile(Miercoles))
+                ),
+                rx.chakra.tab_panel(
+                    rx.chakra.center(horarios_item_mobile(Jueves))
+                ),
+                rx.chakra.tab_panel(
+                    rx.chakra.center(horarios_item_mobile(Viernes))
+                ),
+            ),
             width="100%",
-            bg=Color.DARK_RED.value,
-            allow_multiple=False,
-            allow_toggle=True,
+            bg=Color.PRIMARY.value,
             color="white",
-        )
+            align='center'
+        ),
     )

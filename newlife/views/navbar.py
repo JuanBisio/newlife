@@ -9,7 +9,7 @@ from newlife.components.link_navbar import link_navbar
 from newlife.components.ant_components import float_button
 
 
-def navbar(bg) -> rx.Component:
+def navbar(bg, position='sticky') -> rx.Component:
     return rx.chakra.vstack(
         rx.chakra.hstack(
             # LOGO
@@ -66,7 +66,7 @@ def navbar(bg) -> rx.Component:
         ),
         float_button(),
         bg=bg,
-        position='sticky',
+        position=position,
         padding_x=Size.BIG.value,
         padding_y=Size.SMALL.value,
         z_index='999',

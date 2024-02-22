@@ -1,80 +1,25 @@
 import reflex as rx
 from newlife.styles.styles import Color, Size, Font
 
+from newlife.components.target_time import target_time
 
-def horarios_item_mobile(horarios) -> rx.Component:
-    return rx.chakra.table_container(
-        rx.chakra.table(
-            rx.chakra.thead(
-                rx.chakra.tr(
-                    rx.chakra.th("H"),
-                    rx.chakra.th("Horarios Verano"),
-                ),
-            ),
-            rx.chakra.tbody(
-                rx.chakra.tr(
-                    rx.chakra.td('8:00'),
-                    rx.chakra.td(horarios[0]),
-                ),
-                rx.chakra.tr(
-                    rx.chakra.td('9:00'),
-                    rx.chakra.td(horarios[1]),
-                ),
-                rx.chakra.tr(
-                    rx.chakra.td('10:00'),
-                    rx.chakra.td(horarios[2]),
-                ),
-                rx.chakra.tr(
-                    rx.chakra.td('11:00'),
-                    rx.chakra.td(horarios[3]),
-                ),
-                rx.chakra.tr(
-                    rx.chakra.td('12:00'),
-                    rx.chakra.td(horarios[4]),
-                ),
-                rx.chakra.tr(
-                    rx.chakra.td('13:00'),
-                    rx.chakra.td(horarios[5]),
-                ),
-                rx.chakra.tr(
-                    rx.chakra.td('14:00'),
-                    rx.chakra.td(horarios[6]),
-                ),
-                rx.chakra.tr(
-                    rx.chakra.td('15:00'),
-                    rx.chakra.td(horarios[7]),
-                ),
-                rx.chakra.tr(
-                    rx.chakra.td('16:00'),
-                    rx.chakra.td(horarios[8]),
-                ),
-                rx.chakra.tr(
-                    rx.chakra.td('17:00'),
-                    rx.chakra.td(horarios[9]),
-                ),
-                rx.chakra.tr(
-                    rx.chakra.td('18:00'),
-                    rx.chakra.td(horarios[10]),
-                ),
-                rx.chakra.tr(
-                    rx.chakra.td('19:00'),
-                    rx.chakra.td(horarios[11]),
-                ),
-                rx.chakra.tr(
-                    rx.chakra.td('20:00'),
-                    rx.chakra.td(horarios[12]),
-                ),
-                rx.chakra.tr(
-                    rx.chakra.td('21:00'),
-                    rx.chakra.td(horarios[13]),
-                ),
-                rx.chakra.tr(
-                    rx.chakra.td('22:00'),
-                    rx.chakra.td(horarios[14]),
-                ),
-            ),
-            variant="striped",
-            color_scheme=Color.DARK_RED.value,
 
-        )
+def horarios_item_mobile(actividad) -> rx.Component:
+    return rx.chakra.flex(
+        target_time('08:00', actividad[0]),
+        target_time('09:00', actividad[1]),
+        target_time('10:00', actividad[2]),
+        target_time('11:00', actividad[3]),
+        target_time('12:00', actividad[4]),
+        target_time('13:00', actividad[5]),
+        target_time('14:00', actividad[6]),
+        target_time('15:00', actividad[7]),
+        target_time('16:00', actividad[8]),
+        target_time('17:00', actividad[9]),
+        target_time('18:00', actividad[10]),
+        target_time('19:00', actividad[11]),
+        target_time('20:00', actividad[12]),
+        target_time('21:00', actividad[13]),
+        target_time('22:00', actividad[14]),
+        direction='column',
     )
