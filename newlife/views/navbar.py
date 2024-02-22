@@ -14,7 +14,7 @@ def navbar(bg) -> rx.Component:
         rx.chakra.hstack(
             # LOGO
             rx.chakra.image(
-                src='/Logo.png',
+                src='/Logo.webp',
                 alt='Logo de New Life Gym',
                 width='14em',
                 height=Size.VERY_BIG.value,

@@ -42,7 +42,7 @@ def header(color_bg) -> rx.Component:
         display='flex',
         justify_content='right',
         align_items='center',
-        background_image='CompressFondo3.jpg',  
+        background_image='CompressFondo3.webp',  
         background_size= 'cover',
         background_attachment='fixed', 
         background_position='center',

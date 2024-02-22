@@ -17,7 +17,7 @@ def grid_galery() -> rx.Component:
                 rx.chakra.vstack(
                     rx.chakra.box(
                         rx.chakra.link(
-                            rx.chakra.Image(src='google.png'),
+                            rx.chakra.Image(src='google.webp'),
                             href='https://play.google.com/store/apps/details?id=com.socioplus&hl=es_AR&gl=US&pli=1',
                             is_external=True,
                         ),
@@ -28,7 +28,7 @@ def grid_galery() -> rx.Component:
                     rx.chakra.spacer(),
                     rx.chakra.box(
                         rx.chakra.link(
-                            rx.chakra.Image(src='apple.png'),
+                            rx.chakra.Image(src='apple.webp'),
                             href='https://apps.apple.com/ar/app/socioplus-ux/id1621587015',
                             is_external=True,
                         ),
@@ -37,7 +37,7 @@ def grid_galery() -> rx.Component:
                     )
                 ),
                 rx.tablet_and_desktop(
-                    rx.chakra.image(src='SocioP.png')
+                    rx.chakra.image(src='SocioP.webp')
                 ),
             ),
             max_width='1200px',

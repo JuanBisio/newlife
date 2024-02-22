@@ -16,9 +16,9 @@ def instalaciones_view() -> rx.Component:
             ),
             rx.desktop_only(
                 rx.chakra.grid(
-                    grid_item(2, 2, '/instalaciones/1.jpeg','Entrenamiento Funcional'),
+                    grid_item(2, 2, '/instalaciones/1.webp','Entrenamiento Funcional'),
                     grid_item(2, 2, '/instalaciones/4.webp','Sala de Musculación'),
-                    grid_item(2, 2, '/instalaciones/2.png','Sauna'),
+                    grid_item(2, 2, '/instalaciones/2.webp','Sauna'),
                     grid_item(2, 2, '/instalaciones/3.webp','Dojo de Karate'),
                     template_rows="repeat(4, 1fr)",
                     template_columns="repeat(4, 1fr)",
@@ -29,9 +29,9 @@ def instalaciones_view() -> rx.Component:
             ),
             rx.mobile_and_tablet(
                 rx.chakra.grid(
-                    grid_item(2, 2, '/instalaciones/1.jpeg','Entrenamiento Funcional'),
+                    grid_item(2, 2, '/instalaciones/1.webp','Entrenamiento Funcional'),
                     grid_item(2, 2, '/instalaciones/4.webp','Sala de Musculación'),
-                    grid_item(2, 2, '/instalaciones/2.png','Sauna'),
+                    grid_item(2, 2, '/instalaciones/2.webp','Sauna'),
                     grid_item(2, 2, '/instalaciones/3.webp','Dojo de Karate'),
                     template_rows="repeat(4, 0.5fr)",
                     template_columns="repeat(2, 0.5fr)",
