@@ -2,7 +2,6 @@ import reflex as rx
 
 from newlife.styles.styles import Color, Size, Font
 
-from newlife.components.form_upload import form_upload
 
 
 class FormState(rx.State):
