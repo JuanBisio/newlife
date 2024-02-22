@@ -1,0 +1,16 @@
+import reflex as rx
+from newlife.styles.styles import Color, Size, Font
+
+
+def form_upload() -> rx.Component:
+    return rx.upload(
+        rx.chakra.text(
+            "Subi tu curriculum aquí"
+        ),
+        border=f"1px dotted #777771",
+        _hover={
+            'border':f'1px dotted {Color.DARK_RED.value}'
+        },
+        padding="5em",
+        is_required=True,
+    )
