@@ -174,6 +174,7 @@ def registration_form() -> rx.Component:
             ),
             max_width='1200px',
         ),
+        id='galery',
         bg=Color.PRIMARY.value,
         overflow='overview'
     )

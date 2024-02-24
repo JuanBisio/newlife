@@ -36,6 +36,7 @@ def about_us() -> rx.Component:
                             "color": Color.PRIMARY.value,
                         },
                     ),
+                    href='#footer'
                 ),
                 rx.chakra.spacer(),
                 rx.chakra.link(

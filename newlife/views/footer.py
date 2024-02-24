@@ -70,5 +70,6 @@ def footer(bg) -> rx.Component:
         z_index='999',
         top='0',
         width='100%',
-        font_family=Font.DEFAULT.value
+        font_family=Font.DEFAULT.value,
+        id='footer'
     )

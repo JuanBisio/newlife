@@ -21,14 +21,17 @@ def header(color_bg) -> rx.Component:
                     margin_bottom='5px',
                     padding_bottom='0px',
                 ),
-                rx.chakra.button(
-                    'EMPEZAR',
-                    bg=Color.DARK_RED.value,
-                    border_radius='5px',
-                    width='50%',
-                    _hover={
-                        "background_color": Color.PRIMARY.value,
-                    },
+                rx.link(
+                    rx.chakra.button(
+                        'EMPEZAR',
+                        bg=Color.DARK_RED.value,
+                        border_radius='5px',
+                        width='50%',
+                        _hover={
+                            "background_color": Color.PRIMARY.value,
+                        },
+                    ),
+                    href='#galery'
                 ),
                 display='flex',
                 text_aling='left',
@@ -47,7 +50,7 @@ def header(color_bg) -> rx.Component:
             font_family=Font.TITLE.value,
             bg=color_bg,
         ),
-        background_image='CompressFondo3.webp',
+        background_image='/header/CompressFondo3.webp',
         background_size='cover',
         background_attachment='fixed',
         background_position='center',
