@@ -12,6 +12,7 @@ from newlife.views.horarios_view import horarios_view
 )
 def horarios_function() -> rx.Component:
     return rx.chakra.vstack(
+        rx.script("document.documentElement.lang='es'"),
         navbar('#1C1C1A', 'static'),
         horarios_view(),
         footer('#1C1C1A'),

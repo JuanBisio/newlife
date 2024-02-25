@@ -13,6 +13,7 @@ from newlife.views.instalaciones_view import instalaciones_view
 )
 def instalaciones_function() -> rx.Component:
     return rx.chakra.vstack(
+        rx.script("document.documentElement.lang='es'"),
         navbar('#1C1C1A'),
         instalaciones_view(),
         footer('#1C1C1A'),

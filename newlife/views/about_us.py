@@ -33,7 +33,7 @@ def about_us() -> rx.Component:
                         border_radius='5px',
                         color=Color.WHITE.value,
                         _hover={
-                            "color": Color.PRIMARY.value,
+                            'transform': 'scale(1.1)',
                         },
                     ),
                     href='#footer'
@@ -46,7 +46,7 @@ def about_us() -> rx.Component:
                         border_radius='5px',
                         color=Color.WHITE.value,
                         _hover={
-                            "color": Color.PRIMARY.value,
+                            'transform': 'scale(1.1)',
                         },
                     ),
                     href='/horarios',
@@ -55,7 +55,7 @@ def about_us() -> rx.Component:
                 justify_content='space_evenly'
             ),
 
-            color='#7A7A7A',
+            color=Color.WHITE.value,
             text_aling='center',
             font_family=Font.DEFAULT.value,
             max_width='800px',

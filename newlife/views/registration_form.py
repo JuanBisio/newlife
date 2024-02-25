@@ -6,7 +6,6 @@ class RegistrationFormState(rx.State):
     form_data: dict = {}
 
     def handle_submit(self, form_data: dict):
-        """Handle the form submit."""
         self.form_data = form_data
 
 
@@ -150,17 +149,17 @@ def registration_form() -> rx.Component:
                             bg=Color.DARK_RED.value,
                             color=Color.WHITE.value,
                             _hover={
-                                "color": Color.PRIMARY.value,
+                                'transform': 'scale(1.1)',
                             },
                         ),
                         rx.link(
                             rx.chakra.button(
                                 "Enviar a WhatsApp",
-                                # type_="submit",
+                                type_="submit",
                                 bg=Color.DARK_RED.value,
                                 color=Color.WHITE.value,
                                 _hover={
-                                    "color": Color.PRIMARY.value,
+                                    'transform': 'scale(1.1)',
                                 },
                             ),
                             href=f'https://api.whatsapp.com/send?phone=+5493584299645&text={RegistrationFormState.form_data.to_string()}',

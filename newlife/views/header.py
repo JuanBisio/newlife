@@ -2,6 +2,10 @@ import reflex as rx
 
 from newlife.styles.styles import Color, Size, Font
 
+imageD = '/header/CompressFondo3.webp',
+imageM = '/header/FondoMobile.webp',
+imageT = '/header/FondoTablet.webp',
+imageL = '/header/FondoLaptop.webp',
 
 def header(color_bg) -> rx.Component:
     return rx.chakra.hstack(
@@ -50,7 +54,7 @@ def header(color_bg) -> rx.Component:
             font_family=Font.TITLE.value,
             bg=color_bg,
         ),
-        background_image='/header/CompressFondo3.webp',
+        background_image=[imageM,imageT,imageL,imageL,imageD],
         background_size='cover',
         background_attachment='fixed',
         background_position='center',

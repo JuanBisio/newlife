@@ -13,7 +13,7 @@ def navbar(bg, position='sticky') -> rx.Component:
         rx.chakra.hstack(
             # LOGO
             rx.chakra.image(
-                src='/header/Logo.webp',
+                src='/header/LogoR.webp',
                 alt='Logo de New Life Gym',
                 width='14em',
                 height=Size.VERY_BIG.value,
@@ -38,28 +38,27 @@ def navbar(bg, position='sticky') -> rx.Component:
                 drawer()
             ),
             rx.desktop_only(
-                rx.chakra.hstack(
-                    link_navbar(
-                        rx.chakra.image(src='/icons/instagram.svg',
-                                        width=Size.DEFAULT.value, height=Size.DEFAULT.value),
-                        'https://www.instagram.com/newlifegimnasio/'
+                    rx.chakra.hstack(
+                        link_navbar(
+                                rx.chakra.image(src='/iconsImage/instagram.webp',
+                                            width=Size.DEFAULT.value, height=Size.DEFAULT.value),
+                            'https://www.instagram.com/newlifegimnasio/'
+                        ),
+                        link_navbar(
+                                rx.chakra.image(src='/iconsImage/whatsapp.webp', width=Size.DEFAULT.value, height=Size.DEFAULT.value),
+                            """https://api.whatsapp.com/send/?phone=5493584299645&text&app_absent=0"""
+                        ),
+                        link_navbar(
+                            rx.chakra.image(
+                                    src='/iconsImage/facebook.webp', width=Size.DEFAULT.value, height=Size.DEFAULT.value),
+                            "https://www.facebook.com/newliferiocuarto/"
+                        ),
+                        link_navbar(
+                            rx.chakra.image(
+                                    src='/iconsImage/twitter.webp', width=Size.DEFAULT.value, height=Size.DEFAULT.value),
+                            "https://twitter.com/newlifegimnasio"
+                        ),
                     ),
-                    link_navbar(
-                        rx.chakra.image(
-                            src='/icons/whatsapp.svg', width=Size.DEFAULT.value, height=Size.DEFAULT.value),
-                        """https://api.whatsapp.com/send/?phone=5493584299645&text&app_absent=0"""
-                    ),
-                    link_navbar(
-                        rx.chakra.image(
-                            src='/icons/facebook.svg', width=Size.DEFAULT.value, height=Size.DEFAULT.value),
-                        "https://www.facebook.com/newliferiocuarto/"
-                    ),
-                    link_navbar(
-                        rx.chakra.image(
-                            src='/icons/twitter.svg', width=Size.DEFAULT.value, height=Size.DEFAULT.value),
-                        "https://twitter.com/newlifegimnasio"
-                    ),
-                ),
             ),
             width='100%',
 

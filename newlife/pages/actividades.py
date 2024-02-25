@@ -14,6 +14,7 @@ from newlife.components.spacer import spacer
 )
 def actividades_function() -> rx.Component:
     return rx.chakra.vstack(
+        rx.script("document.documentElement.lang='es'"),
         navbar('#1C1C1A'),
         actividades_view(),
         spacer(),

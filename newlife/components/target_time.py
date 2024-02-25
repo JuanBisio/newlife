@@ -28,7 +28,7 @@ def target_time(horario, actividad) -> rx.Component:
             ),
             rx.chakra.hstack(
                 rx.image(
-                    src='/icons/time.svg',
+                    src='/iconsImage/time.webp',
                     width='1.5em',
                     margin_x=Size.SMALL.value,
                     margin_bottom=Size.SMALL.value,

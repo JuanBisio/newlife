@@ -4,6 +4,7 @@ from newlife.styles.styles import Size, Color, TextColor, Font
 from newlife.components.link_icon import link_icon
 from newlife.components.drawer import drawer
 from newlife.components.link_navbar import link_navbar
+from newlife.components.link_svg import link_svg
 from newlife.components.ant_components import float_button
 
 
@@ -32,30 +33,24 @@ def footer(bg) -> rx.Component:
             rx.chakra.spacer(),
             rx.desktop_only(
                 rx.chakra.hstack(
-                    rx.chakra.hstack(
-                        link_navbar(
-                            rx.chakra.image(
-                                src='/icons/instagram.svg',
-                                width=Size.DEFAULT.value, height=Size.DEFAULT.value),
-                            'https://www.instagram.com/newlifegimnasio/'
-                        ),
-                        link_navbar(
-                            rx.chakra.image(
-                                src='/icons/whatsapp.svg',
-                                width=Size.DEFAULT.value,
-                                height=Size.DEFAULT.value),
-                            """https://api.whatsapp.com/send/?phone=5493584299645&text&app_absent=0"""
-                        ),
-                        link_navbar(
-                            rx.chakra.image(
-                                src='/icons/facebook.svg', width=Size.DEFAULT.value, height=Size.DEFAULT.value),
-                            "https://www.facebook.com/newliferiocuarto/"
-                        ),
-                        link_navbar(
-                            rx.chakra.image(
-                                src='/icons/twitter.svg', width=Size.DEFAULT.value, height=Size.DEFAULT.value),
-                            "https://twitter.com/newlifegimnasio"
-                        ),
+                    link_navbar(
+                            rx.chakra.image(src='/iconsImage/instagram.webp',
+                                        width=Size.DEFAULT.value, height=Size.DEFAULT.value),
+                        'https://www.instagram.com/newlifegimnasio/'
+                    ),
+                    link_navbar(
+                            rx.chakra.image(src='/iconsImage/whatsapp.webp', width=Size.DEFAULT.value, height=Size.DEFAULT.value),
+                        """https://api.whatsapp.com/send/?phone=5493584299645&text&app_absent=0"""
+                    ),
+                    link_navbar(
+                        rx.chakra.image(
+                                src='/iconsImage/facebook.webp', width=Size.DEFAULT.value, height=Size.DEFAULT.value),
+                        "https://www.facebook.com/newliferiocuarto/"
+                    ),
+                    link_navbar(
+                        rx.chakra.image(
+                                src='/iconsImage/twitter.webp', width=Size.DEFAULT.value, height=Size.DEFAULT.value),
+                        "https://twitter.com/newlifegimnasio"
                     ),
                 ),
             ),

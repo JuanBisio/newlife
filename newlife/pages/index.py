@@ -20,6 +20,7 @@ from newlife.views.footer import footer
 )
 def index_function() -> rx.Component:
     return rx.chakra.box(
+        rx.script("document.documentElement.lang='es'"),
         navbar('#1C1C1A'),
         header('#1C1C1ACC'),
         about_us(),

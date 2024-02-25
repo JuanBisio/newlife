@@ -18,7 +18,7 @@ def item_desktop(actividad='Actividad') -> rx.Component:
             ),
             rx.chakra.hstack(
                 rx.image(
-                    src='/icons/time.svg',
+                    src='/iconsImage/time.webp',
                     width='1.3em',
                 ),
                 rx.text(
@@ -40,7 +40,6 @@ def item_desktop(actividad='Actividad') -> rx.Component:
                 'background_color': Color.DARK_RED.value,
             },
         ),
-        # href='/'
         _hover={
             'text_decoration': 'none',
         },

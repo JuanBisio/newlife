@@ -2,7 +2,7 @@ import reflex as rx
 from newlife.styles.styles import Color, Size, Font
 
 
-def link_navbar(text: str, href: str, bg_color=Color.DARK_RED.value) -> rx.Component:
+def link_navbar(text, href: str, bg_color=Color.DARK_RED.value) -> rx.Component:
     return rx.chakra.link(
         rx.chakra.button(
             text,

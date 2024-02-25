@@ -119,7 +119,7 @@ def title():
         rx.chakra.vstack(
             rx.chakra.hstack(
                 rx.image(
-                src='/icons/calendar.svg',
+                src='/iconsImage/calendar.webp',
                 width='1.3em',
             ),
                 
