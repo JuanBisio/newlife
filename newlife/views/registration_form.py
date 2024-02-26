@@ -1,12 +1,35 @@
 import reflex as rx
 from newlife.styles.styles import Color, Size, Font
 
+# return rx.script("window.location.href = '/horarios'")
+
+
+class SpecialEventsState(rx.State):
+    def alert(self):
+        return rx.red("Hello World!")
+
 
 class RegistrationFormState(rx.State):
     form_data: dict = {}
 
     def handle_submit(self, form_data: dict):
         self.form_data = form_data
+        #print(form_data)
+        actividades = []
+        for clave,valor in form_data.items():
+            if (clave != "Nombre: ") and (clave != "Apellido: ") and (clave != "Mensaje: "):
+                actividades.append(clave)  
+            elif clave == "Nombre: ":
+                nombre = valor
+            elif clave == "Apellido: ":
+                apellido = valor    
+            elif clave == "Mensaje: ":
+                mensaje = valor 
+        
+        string = f"Nombre: {nombre} -- Apellido: {apellido} -- Actividad/es: {actividades} -- Mensaje: {mensaje}"
+        
+        link = f'https://api.whatsapp.com/send?phone=+5493584299645&text={string}'
+        return rx.redirect(link, external=True)
 
 
 class RegistrationTextareaState(rx.State):
@@ -144,30 +167,21 @@ def registration_form() -> rx.Component:
                     ),
                     rx.hstack(
                         rx.chakra.button(
-                            "Guardar",
-                            type_="submit",
+                            "Enviar a Whatsapp",
+                            type_='submit',
                             bg=Color.DARK_RED.value,
                             color=Color.WHITE.value,
                             _hover={
                                 'transform': 'scale(1.1)',
                             },
-                        ),
-                        rx.link(
-                            rx.chakra.button(
-                                "Enviar a WhatsApp",
-                                type_="submit",
-                                bg=Color.DARK_RED.value,
-                                color=Color.WHITE.value,
-                                _hover={
-                                    'transform': 'scale(1.1)',
-                                },
-                            ),
-                            href=f'https://api.whatsapp.com/send?phone=+5493584299645&text={RegistrationFormState.form_data.to_string()}',
-                            is_external=True
+                            # on_click=rx.redirect(
+                            #    f'https://api.whatsapp.com/send?phone=+5493584299645&text={RegistrationFormState.form_data.to_string()}',
+                            #    external=True,
+                            # ),
                         ),
                     ),
                     on_submit=RegistrationFormState.handle_submit,
-                    reset_on_submit=True,
+                    reset_on_submit=False,
                     width=['20em', '15em', '15em', '20em', '30em']
                 ),
             ),

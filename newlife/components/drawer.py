@@ -42,12 +42,12 @@ def drawer() -> rx.Component:
                     ),
                     rx.chakra.drawer_body(
                         rx.chakra.vstack(
-                            link_navbar('Newlife', '/', '#FFFFFF00'),
+                            link_navbar('Newlife', '/', '#FFFFFF00', False),
                             link_navbar('Instalaciones',
-                                        '/instalaciones', '#FFFFFF00'),
+                                        '/instalaciones', '#FFFFFF00', False),
                             link_navbar('Actividades',
-                                        '/actividades', '#FFFFFF00'),
-                            link_navbar('Horarios', '/horarios', '#FFFFFF00'),
+                                        '/actividades', '#FFFFFF00', False),
+                            link_navbar('Horarios', '/horarios', '#FFFFFF00', False),
                         ),
                         font_size=Size.MEDIUM.value,
                         display='flex',

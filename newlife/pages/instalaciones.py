@@ -18,5 +18,4 @@ def instalaciones_function() -> rx.Component:
         instalaciones_view(),
         footer('#1C1C1A'),
         style=styles.BASE_STYLE,
-
     )
