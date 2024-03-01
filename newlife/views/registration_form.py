@@ -84,10 +84,10 @@ def registration_form() -> rx.Component:
                         "Clases", size='lg', color=Color.DARK_RED.value, margin_y=Size.SMALL.value),
                     rx.vstack(
                         rx.chakra.checkbox(
-                            'Localizada',
+                            'Cardio/Local',
                             color_scheme='yellow',
                             size="md",
-                            name='Localizada'
+                            name='Cardio/Local'
                         ),
                         rx.chakra.checkbox(
                             'Kimax',

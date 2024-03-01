@@ -42,12 +42,13 @@ def drawer() -> rx.Component:
                     ),
                     rx.chakra.drawer_body(
                         rx.chakra.vstack(
-                            link_navbar('Newlife', '/', '#FFFFFF00', False),
+                            link_navbar('Newlife', '/', '#FFFFFF00', False,DrawerState.right),
                             link_navbar('Instalaciones',
-                                        '/instalaciones', '#FFFFFF00', False),
+                                        '/instalaciones', '#FFFFFF00', False,DrawerState.right),
                             link_navbar('Actividades',
-                                        '/actividades', '#FFFFFF00', False),
-                            link_navbar('Horarios', '/horarios', '#FFFFFF00', False),
+                                        '/actividades', '#FFFFFF00', False,DrawerState.right),
+                            link_navbar('Horarios', '/horarios', '#FFFFFF00', False,DrawerState.right),
+                            link_navbar('Sauna', 'https://sites.google.com/view/newlife-sauna/inicio', '#FFFFFF00', False,DrawerState.right),
                         ),
                         font_size=Size.MEDIUM.value,
                         display='flex',

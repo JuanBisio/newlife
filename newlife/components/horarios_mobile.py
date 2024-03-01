@@ -2,92 +2,7 @@ import reflex as rx
 
 from newlife.styles.styles import Color, Size, Font
 from newlife.components.horarios_item_mobile import horarios_item_mobile
-
-Lunes = [
-    'Apertura',
-    'Ritmos Latinos(CG)',
-    '-',
-    '-',
-    'Cierre',
-    'Reapertura (13:30)',
-    'Full Hiit (14:15)',
-    '-',
-    'Cierre',
-    '-',
-    'Reapertura',
-    '-',
-    'Kimax (20:30)',
-    '-',
-    'Cierre (22:30)'
-]
-Martes = [
-    'Apertura',
-    '-',
-    '-',
-    'Cierre',
-    '-',
-    'Reapertura (13:30)',
-    'Piernas/Gluteos (14:15)',
-    '-',
-    'Cierre',
-    '-',
-    'Reapertura',
-    'Entrenamiento Funcional (18:30)',
-    'Power Flex (19:45)',
-    'Karate',
-    'Cierre (22:30)'
-]
-Miercoles = [
-    'Apertura',
-    'Ritmos Latinos(CG)',
-    '-',
-    '-',
-    'Cierre',
-    'Reapertura (13:30)',
-    'Full Hiit (14:15)',
-    '-',
-    'Cierre',
-    '-',
-    'Reapertura',
-    '-',
-    'Kimax (20:30)',
-    '-',
-    'Cierre (22:30)'
-]
-Jueves = [
-    'Apertura',
-    '-',
-    '-',
-    'Cierre',
-    '-',
-    'Reapertura (13:30)',
-    'Piernas/ABS (14:15)',
-    '-',
-    'Cierre',
-    '-',
-    'Reapertura',
-    'Entrenamiento Funcional (18:30)',
-    'Power Flex (19:45)',
-    'Karate',
-    'Cierre (22:30)'
-]
-Viernes = [
-    'Apertura',
-    'Ritmos Latinos(CG)',
-    '-',
-    '-',
-    'Cierre',
-    'Reapertura (13:30)',
-    'Full Hiit (14:15)',
-    '-',
-    'Cierre',
-    '-',
-    'Reapertura',
-    '-',
-    'Kimax (20:30)',
-    '-',
-    'Cierre (22:30)'
-]
+import newlife.horarios_constanst as c
 
 
 def horarios_mobile() -> rx.Component:
@@ -99,23 +14,27 @@ def horarios_mobile() -> rx.Component:
                 rx.chakra.tab("Mie"),
                 rx.chakra.tab("Jue"),
                 rx.chakra.tab("Vie"),
+                rx.chakra.tab("Sab"),
 
             ),
             rx.chakra.tab_panels(
                 rx.chakra.tab_panel(
-                    rx.chakra.center(horarios_item_mobile(Lunes))
+                    rx.chakra.center(horarios_item_mobile(c.LUNES))
                 ),
                 rx.chakra.tab_panel(
-                    rx.chakra.center(horarios_item_mobile(Martes))
+                    rx.chakra.center(horarios_item_mobile(c.MARTES))
                 ),
                 rx.chakra.tab_panel(
-                    rx.chakra.center(horarios_item_mobile(Miercoles))
+                    rx.chakra.center(horarios_item_mobile(c.MIERCOLES))
                 ),
                 rx.chakra.tab_panel(
-                    rx.chakra.center(horarios_item_mobile(Jueves))
+                    rx.chakra.center(horarios_item_mobile(c.JUEVES))
                 ),
                 rx.chakra.tab_panel(
-                    rx.chakra.center(horarios_item_mobile(Viernes))
+                    rx.chakra.center(horarios_item_mobile(c.VIERNES))
+                ),
+                rx.chakra.tab_panel(
+                    rx.chakra.center(horarios_item_mobile(c.SABADO))
                 ),
             ),
             width="100%",

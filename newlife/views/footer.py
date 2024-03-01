@@ -13,11 +13,13 @@ def footer(bg) -> rx.Component:
         rx.chakra.hstack(
             rx.desktop_only(
                 rx.chakra.hstack(
-                    link_navbar('Newlife', '/', '#FFFFFF00', False),
+                    link_navbar('Newlife', '/', '#FFFFFF00', False,rx.redirect('/')),
                     link_navbar('Instalaciones',
-                                '/instalaciones', '#FFFFFF00', False),
-                    link_navbar('Actividades', '/actividades', '#FFFFFF00', False),
-                    link_navbar('Horarios', '/suplementos', '#FFFFFF00', False),
+                                '/instalaciones', '#FFFFFF00', False,rx.redirect('/instalaciones')),
+                    link_navbar('Actividades', '/actividades', '#FFFFFF00', False,rx.redirect('/actividades')),
+                    link_navbar('Horarios', '/horarios', '#FFFFFF00', False,rx.redirect('/horarios')),
+                    link_navbar('Sauna', 'https://sites.google.com/view/newlife-sauna/inicio', '#FFFFFF00', False,rx.redirect('https://sites.google.com/view/newlife-sauna/inicio')),
+
                 ),
             ),
             rx.mobile_and_tablet(

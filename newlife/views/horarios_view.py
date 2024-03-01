@@ -19,7 +19,8 @@ def horarios_view() -> rx.Component:
             ),
             rx.desktop_only(
                 horarios_desktop(),
-                width='100vw',
+                width=['90vw','90vw','90vw','90vw','94vw','96vw','100vw'],
+                overview='overflow'
             ),
             rx.mobile_and_tablet(
                 horarios_mobile(),

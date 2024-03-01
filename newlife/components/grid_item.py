@@ -31,8 +31,6 @@ def grid_item(row, col, img, txt) -> rx.Component:
         background_repeat='no-repeat',
         width=['22em', '22em', '22em', '34em', '34em'],
         height=['17em', '17em', '17em', '27em', '27em'],
-        background_size='contain',
+        background_size='cover',
         transition='0.5s',
-
-
     )

@@ -28,8 +28,8 @@ def item_desktop(actividad='Actividad') -> rx.Component:
                 padding=Size.SMALL.value,
 
             ),
-            width="14.3em",
-            height="6.5em",
+            width="13.3em",
+            height="6em",
             border_bottom=f'solid 2px {Color.DARK_RED.value}',
             border_radius='5px',
             bg='#373737',
@@ -43,5 +43,5 @@ def item_desktop(actividad='Actividad') -> rx.Component:
         _hover={
             'text_decoration': 'none',
         },
-
+        margin_bottom=Size.DEFAULT.value,
     )

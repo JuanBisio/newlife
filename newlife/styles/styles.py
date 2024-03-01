@@ -17,12 +17,20 @@ STYLESHEETS = [
     "https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap",
     "https://fonts.googleapis.com/css2?family=Roboto&display=swap",
     "https://db.onlinewebfonts.com/c/ecd9c1fa8dbb2338b017932c61344252?family=Heretic+W00+Black&display=swap",
-    "https://fonts.googleapis.com/css2?family=Syne&display=swap"
+    "https://fonts.googleapis.com/css2?family=Syne&display=swap",
+    "/css/styles.css",
 ]
 
 BASE_STYLE = {
     'font_family': Font.DEFAULT.value,
     'color': TextColor.PRIMARY.value,
     'background': Color.PRIMARY.value,
+    'scroll_behavior': 'smooth',
+}
+
+BASE_STYLE_SAUNA = {
+    'font_family': Font.DEFAULT.value,
+    'color': TextColor.PRIMARY.value,
+    'background': '#F1F0E4',
     'scroll_behavior': 'smooth',
 }
