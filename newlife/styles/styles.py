@@ -18,6 +18,7 @@ STYLESHEETS = [
     "https://fonts.googleapis.com/css2?family=Roboto&display=swap",
     "https://db.onlinewebfonts.com/c/ecd9c1fa8dbb2338b017932c61344252?family=Heretic+W00+Black&display=swap",
     "https://fonts.googleapis.com/css2?family=Syne&display=swap",
+    "https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css",
     "/css/styles.css",
 ]
 

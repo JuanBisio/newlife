@@ -1,0 +1,44 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.movies {
+  padding: 50px 0 150px 0;
+}
+
+.swiper {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  overflow: hidden !important;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-color: red;
+  background-size: cover;
+  width: 250px !important;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+}
+
+.swiper-pagination{
+  margin-top: 35px;
+  position:relative !important;
+}
+
+.swiper-pagination-bullet{
+  width: .75rem !important;
+  height: .75rem !important;
+  opacity: 1;
+  background-color: #cecece !important;
+
+}
+
+.swiper-pagination-bullet-active{
+  background-color: #ba0210 !important;
+}

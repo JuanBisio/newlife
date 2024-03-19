@@ -48,6 +48,7 @@ def drawer() -> rx.Component:
                             link_navbar('Actividades',
                                         '/actividades', '#FFFFFF00', False,DrawerState.right),
                             link_navbar('Horarios', '/horarios', '#FFFFFF00', False,DrawerState.right),
+                            #link_navbar('Sauna', '/sauna', '#FFFFFF00', False,DrawerState.right),
                             link_navbar('Sauna', 'https://sites.google.com/view/newlife-sauna/inicio', '#FFFFFF00', False,DrawerState.right),
                         ),
                         font_size=Size.MEDIUM.value,

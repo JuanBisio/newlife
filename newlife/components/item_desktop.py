@@ -29,7 +29,7 @@ def item_desktop(actividad='Actividad') -> rx.Component:
 
             ),
             width="13.3em",
-            height="6em",
+            height="8em",
             border_bottom=f'solid 2px {Color.DARK_RED.value}',
             border_radius='5px',
             bg='#373737',

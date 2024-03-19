@@ -30,6 +30,7 @@ def navbar(bg, position='sticky') -> rx.Component:
                                 '/instalaciones', '#FFFFFF00', False,rx.redirect('/instalaciones')),
                     link_navbar('Actividades', '/actividades', '#FFFFFF00', False,rx.redirect('/actividades')),
                     link_navbar('Horarios', '/horarios', '#FFFFFF00', False,rx.redirect('/horarios')),
+                    #link_navbar('Sauna', '/sauna', '#FFFFFF00', False,rx.redirect('/sauna')),
                     link_navbar('Sauna', 'https://sites.google.com/view/newlife-sauna/inicio', '#FFFFFF00', False,rx.redirect('https://sites.google.com/view/newlife-sauna/inicio')),
             
                 ),

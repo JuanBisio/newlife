@@ -1,36 +1,31 @@
 import reflex as rx
-
 from newlife.styles.styles import Color, Size, Font
 
-imageD = '/header/CompressFondo3.webp',
-imageM = '/header/FondoMobile.webp',
-imageT = '/header/FondoTablet.webp',
-imageL = '/header/FondoLaptop.webp',
 
-def headerSauna(color_bg) -> rx.Component:
-    return rx.chakra.hstack(
+def slide_header(color_bg,imageD) -> rx.Component:
+    return rx.box(
         rx.chakra.hstack(
             rx.chakra.vstack(
                 rx.chakra.text(
-                    'Un momento para vos',
-                    font_size='3em',
+                    'La transformacion de tu vida inicia aqui',
+                    font_size='1.7em',
                     color=Color.DARK_RED.value,
                     margin_bottom='0px',
                     padding_bottom='0px',
                 ),
                 rx.chakra.text(
-                    'relax',
-                    font_size='1.7em',
+                    'Desafía tu limites y comienza ahora una nueva vida mas saludable, dinámica y divertida. Con tan solo 45 minutos de actividad puedes conseguir resultados increíbles. Tenemos varias opciones en nuestros horarios. Encuentra la mejor propuesta para ti y ven a entrenar con nosotros.',
+                    font_size=Size.DEFAULT.value,
                     color=Color.WHITE.value,
                     margin_bottom='5px',
                     padding_bottom='0px',
                 ),
                 rx.link(
                     rx.chakra.button(
-                        'Dias y Horarios',
+                        'EMPEZAR',
                         bg=Color.DARK_RED.value,
                         border_radius='5px',
-                        width='100%',
+                        width='50%',
                         _hover={
                             "background_color": Color.PRIMARY.value,
                         },
@@ -38,22 +33,23 @@ def headerSauna(color_bg) -> rx.Component:
                     href='#galery'
                 ),
                 display='flex',
-                justify_content='center',
-                align_items='center',
+                text_aling='left',
+                justify_content='left',
+                align_items='left',
                 margin_x=Size.BIG.value,
                 max_width=['90%', '90%', '70%', '30%', '30%',]
             ),
 
             display='flex',
-            justify_content='center',
+            justify_content='left',
             align_items='center',
-            min_width='100vw',
-            height='89vh',
-            margin='0 !important',
+            width='100%',
+            height='92vh',
+            margin='0px !important',
             font_family=Font.TITLE.value,
             bg=color_bg,
         ),
-        background_image='/instalaciones/2.webp',
+        background_image=imageD,
         background_size='cover',
         background_attachment='fixed',
         background_position='center',

@@ -4,16 +4,18 @@ LUNES = [
     'Musculación',
     'Musculación',
     'Musculación',
-    'Full Hiit',
     'Musculación',
+    'Karate Adolescentes y Adultos-(14:30)',
     'Musculación',
     'Musculación',
     'Musculación',
     'Cardio/Local(CG)',
     'Musculación',
-    'Kimax',
+    'Kimax (20:30)',
     'Musculación',
-    'Cierre (22:30)'
+    'Cierre (22:30)',
+    'Musculación',
+    'Full Hiit',
 ]
 
 MARTES = [
@@ -28,10 +30,13 @@ MARTES = [
     'Musculación',
     'Musculación',
     'Musculación',
-    'Entrenamiento Funcional',
+    'Karate Adolescentes y Adultos (19:45)',
     'Power Flex',
-    'Karate',
-    'Cierre (22:30)'
+    'Karate Adultos',
+    'Cierre (22:30)',
+    'Entrenamiento Funcional - Karate Niños',
+    'Musculación',
+    
 ]
 
 MIERCOLES = [
@@ -40,16 +45,18 @@ MIERCOLES = [
     'Musculación',
     'Musculación',
     'Musculación',
-    'Full Hiit',
     'Musculación',
+    'Karate Adolescentes y Adultos(14:30)',
     'Musculación',
     'Musculación',
     'Musculación',
     'Cardio/Local(CG)',
     'Musculación',
-    'Kimax',
+    'Kimax (20:30)',
     'Musculación',
-    'Cierre (22:30)'
+    'Cierre (22:30)',
+    'Musculación',
+    'Full Hiit',
 ]
 
 JUEVES = [
@@ -64,20 +71,22 @@ JUEVES = [
     'Musculación',
     'Musculación',
     'Musculación',
-    'Entrenamiento Funcional',
+    'Karate Adolescentes y Adultos (19:45)',
     'Power Flex',
-    'Karate',
-    'Cierre (22:30)'
+    'Karate Adultos',
+    'Cierre (22:30)',
+    'Entrenamiento Funcional - Karate Niños',
+    'Musculación',
 ]
 
 VIERNES = [
     'Apertura',
-    'Ritmos Latinos(CG)',
     'Musculación',
     'Musculación',
     'Musculación',
     'Musculación',
-    'Full Hiit',
+    'Musculación',
+    'Musculación',
     'Musculación',
     'Musculación',
     'Musculación',
@@ -85,7 +94,10 @@ VIERNES = [
     'Musculación',
     'Kimax',
     'Musculación',
-    'Cierre (22:30)'
+    'Cierre (22:30)',
+    'Power',
+    'Full Hiit',
+    
 ]
 
 SABADO = [
@@ -103,7 +115,9 @@ SABADO = [
     '',
     '',
     '',
-    ''
+    '',
+    '',
+    '',
 ]
 HOR = [
     #08:00
@@ -121,4 +135,6 @@ HOR = [
     #20:00
     #21:00
     #22:00
+    #18:30
+    #14:15
 ]

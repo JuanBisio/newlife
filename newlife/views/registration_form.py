@@ -29,7 +29,7 @@ class RegistrationFormState(rx.State):
         string = f"Nombre: {nombre} -- Apellido: {apellido} -- Actividad/es: {actividades} -- Mensaje: {mensaje}"
         
         link = f'https://api.whatsapp.com/send?phone=+5493584299645&text={string}'
-        return rx.redirect(link, external=True)
+        return rx.redirect(link)
 
 
 class RegistrationTextareaState(rx.State):
