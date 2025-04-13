@@ -16,6 +16,7 @@ LUNES = [
     'Cierre (22:30)',
     'Musculación',
     'Full Hiit',
+    'Musculación',
 ]
 
 MARTES = [
@@ -36,6 +37,7 @@ MARTES = [
     'Cierre (22:30)',
     'Entrenamiento Funcional - Karate Niños',
     'Musculación',
+    'Musculación',
     
 ]
 
@@ -51,12 +53,13 @@ MIERCOLES = [
     'Musculación',
     'Musculación',
     'Cardio/Local(CG)',
-    'Musculación',
+    'Power',
     'Kimax (20:30)',
     'Musculación',
     'Cierre (22:30)',
     'Musculación',
     'Full Hiit',
+    'Musculación',
 ]
 
 JUEVES = [
@@ -76,6 +79,7 @@ JUEVES = [
     'Karate Adultos',
     'Cierre (22:30)',
     'Entrenamiento Funcional - Karate Niños',
+    'Musculación',
     'Musculación',
 ]
 
@@ -97,6 +101,7 @@ VIERNES = [
     'Cierre (22:30)',
     'Power',
     'Full Hiit',
+    'Musculación',
     
 ]
 
@@ -118,6 +123,8 @@ SABADO = [
     '',
     '',
     '',
+    'Fight Do',
+    
 ]
 HOR = [
     #08:00
@@ -137,4 +144,5 @@ HOR = [
     #22:00
     #18:30
     #14:15
+    #10:15
 ]

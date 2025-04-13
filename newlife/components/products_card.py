@@ -2,11 +2,11 @@ import reflex as rx
 from newlife.styles.styles import Color, Size, Font
 
 
-class ProductsState(rx.State):
-    show: bool = False
-
-    def change(self):
-        self.show = not (self.show)
+#class ProductsState(rx.State):
+#    show: bool = False
+#
+#    def change(self):
+#        self.show = not (self.show)
 
 
 def products_card(text_button, img) -> rx.Component:

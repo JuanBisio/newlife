@@ -13,8 +13,8 @@ def link_navbar(text, href: str, bg_color=Color.DARK_RED.value, is_external=True
             },
             font_size='1.05em',
             font_family=Font.TITLE.value,
-            on_click=on_click
-
+            # type_="button",
+            id='reload',
         ),
         href=href,
         is_external=is_external,

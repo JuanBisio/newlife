@@ -16,7 +16,7 @@ def about_us_sauna() -> rx.Component:
             rx.chakra.text('El fin de la sauna es administrar calor al cuerpo para producir transpiración, con fines terapéuticos. En la sauna finlandesa se utiliza calor seco, que ronda los 80-100 grados, mientras que la humedad relativa no llega al 15%, lo que propicia una abundante sudoración por parte del cuerpo como mecanismo de refrigeración.',
                            text_aling='center', padding_bottom=Size.SMALL.value),
 
-            color=Color.PRIMARY.value,
+            color=Color.WHITE.value,
             text_aling='center',
             font_family=Font.DEFAULT.value,
             max_width='800px',

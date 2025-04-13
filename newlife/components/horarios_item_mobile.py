@@ -9,6 +9,7 @@ def horarios_item_mobile(actividad) -> rx.Component:
         target_time('08:00', actividad[0]),
         target_time('09:00', actividad[1]),
         target_time('10:00', actividad[2]),
+        target_time('10:15', actividad[17]),
         target_time('11:00', actividad[3]),
         target_time('12:00', actividad[4]),
         target_time('13:00', actividad[5]),

@@ -1,5 +1,4 @@
 import reflex as rx
-
 from newlife.styles.styles import Color, Size, Font
 
 

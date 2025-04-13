@@ -6,10 +6,10 @@ from newlife.views.header import header
 from newlife.views.about_us import about_us
 from newlife.views.galery import galery
 from newlife.views.grid_galery import grid_galery
-from newlife.views.registration_form import registration_form
 from newlife.components.spacer import spacer
 from newlife.components.maps import maps
 from newlife.views.footer import footer
+from newlife.views.form import form
 
 
 @rx.page(
@@ -29,7 +29,7 @@ def index_function() -> rx.Component:
         #spacer(),
         grid_galery(),
         spacer(),
-        registration_form(),
+        form(),
         spacer(),
         maps(),
         spacer(),

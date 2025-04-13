@@ -23,6 +23,6 @@ def sauna_function() -> rx.Component:
         products(),
         sauna_view(),
         footer('#1C1C1A'),
-        style=styles.BASE_STYLE_SAUNA,  
+        style=styles.BASE_STYLE,  
         
     )

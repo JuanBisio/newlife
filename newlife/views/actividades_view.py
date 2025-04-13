@@ -26,8 +26,8 @@ def actividades_view() -> rx.Component:
             actividad('/activity/Compress8.webp', 'Power Flex', 'Esta actividad está orientada a realizar ejercicios de flexibilidad progresivos, con dos clases semanales será suficiente para que puedas ir viendo tus avances y te sientas cada vez más ágil y con mayor movilidad. Ven con ropa cómoda y prepárate para una nueva vida.'),
             actividad('/activity/Compress9.webp', 'Karate', 'El karate es un arte marcial de origen japonés que consiste en la defensa personal. Su práctica tiene beneficios a nivel físico y mental. La disciplina es un elemento esencial para practicar karate. Aprende una nueva filosofía de vida. Clases para niños, adolescentes y adultos', 'row'),
             actividad('/activity/Compress10.webp', 'Power', 'Esta clase es ideal para tonificar todo cuerpo, se trabaja con barras y discos, se enfoca en fuerza y resistencia, disfrutaras de buena música y coreografías progresivas para lograr tus objetivos.'),
-            actividad('/activity/Compress11.webp', 'Musculación',
-                      'Trabajamos segun los objetivos y necesidades de casa persona, realizamos analisis de la composicion corporal para realizar la planificacion del entrenamiento y control mensual. ', 'row'),
+            actividad('/activity/Compress11.webp', 'Musculación','Trabajamos segun los objetivos y necesidades de casa persona, realizamos analisis de la composicion corporal para realizar la planificacion del entrenamiento y control mensual. ', 'row'),
+            actividad('/activity/Compress12.webp', 'Fight Do', 'FIGHT DO ® es una lucha imaginaria contra varios oponentes, combinando lo mejor del Box y de las Artes Marciales. Golpes, rodillazos, patadas, bloqueos y saltos a la soga brindan una clase divertida y efectiva proporcionando un entrenamiento de combate muy simple, dinámico e intenso que asegura por sesión un gasto calórico de entre 600 y 700 calorías, libera estrés y tonifica todo el cuerpo.'),
 
 
             max_width='1200px',

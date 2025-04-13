@@ -20,6 +20,7 @@ STYLESHEETS = [
     "https://fonts.googleapis.com/css2?family=Syne&display=swap",
     "https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css",
     "/css/styles.css",
+    "/css/drawner.css",
 ]
 
 BASE_STYLE = {
